@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>חמישה רמזים | Five Clues</title>
+  <meta name="description" content="משחק חידות מילים וציטוטים בעברית. פענחו משפטים בעזרת 5 רמזים, אספו מטבעות ושברו שיאים במצב המהיר.">
+  <style>
+    :root {
+      --bg: #f7f2e8;
+      --panel: rgba(255, 252, 246, 0.9);
+      --ink: #281d16;
+      --muted: #6f6158;
+      --line: #dbc9b7;
+      --accent: #b85c38;
+      --accent-strong: #8d3f1f;
+      --shadow: rgba(67, 40, 24, 0.14);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Heebo", "Arial Hebrew", Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top right, rgba(184, 92, 56, 0.14), transparent 28%),
+        radial-gradient(circle at top left, rgba(116, 87, 58, 0.12), transparent 24%),
+        linear-gradient(180deg, #fbf8f2 0%, var(--bg) 100%);
+    }
+
+    .wrap {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 56px 0 24px;
+    }
+
+    .hero {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: 0 20px 50px var(--shadow);
+    }
+
+    h1, h2 { margin: 0 0 12px; }
+    h1 { font-size: clamp(2rem, 4vw, 3.6rem); line-height: 1.05; }
+    h2 { font-size: clamp(1.3rem, 2vw, 1.8rem); }
+    p { margin: 0 0 14px; line-height: 1.7; }
+
+    .eyebrow {
+      color: var(--accent-strong);
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      margin-bottom: 14px;
+    }
+
+    .cta-row, nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    a.button, nav a {
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(180deg, var(--accent), var(--accent-strong));
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      box-shadow: 0 10px 22px rgba(141, 63, 31, 0.22);
+    }
+
+    nav a.secondary {
+      color: var(--ink);
+      background: white;
+      border: 1px solid var(--line);
+      box-shadow: none;
+    }
+
+    main {
+      padding: 8px 0 48px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.74);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 18px;
+      box-shadow: 0 14px 30px rgba(67, 40, 24, 0.08);
+    }
+
+    footer {
+      padding: 8px 0 48px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="hero">
+        <div class="eyebrow">Five Clues / חמישה רמזים</div>
+        <h1>5 רמזים. משפט אחד. אתגר עברי ממכר.</h1>
+        <p>פענחו משפטים וציטוטים בעברית בעזרת חמישה רמזים, חשפו אותיות, צברו מטבעות, ונסו לשבור את השיא שלכם במצב המהיר.</p>
+        <p>המשחק משלב חידות מילים, ידע כללי, והתקדמות מבוססת שלבים עם חוויית RTL מלאה בעברית.</p>
+        <div class="cta-row">
+          <a class="button" href="privacy.html">מדיניות פרטיות</a>
+          <a class="button" href="support.html">תמיכה</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>מה יש במשחק</h2>
+        <div class="grid">
+          <div class="card">
+            <h2>פענוח משפטים</h2>
+            <p>בכל שלב תנסו לזהות משפט מוצפן בעזרת רמזים, חשיפת אותיות, וחשיבה לוגית.</p>
+          </div>
+          <div class="card">
+            <h2>מצב מהיר</h2>
+            <p>סבב קצר, ניקוד עולה, ושיא אישי שאפשר לשפר בכל ניסיון חדש.</p>
+          </div>
+          <div class="card">
+            <h2>תגמולים יומיים</h2>
+            <p>חזרו כל יום לקבלת פרסים, מטבעות ורמזים שיעזרו להתקדם.</p>
+          </div>
+          <div class="card">
+            <h2>גיבוי עם Apple ID</h2>
+            <p>אפשרות לשמור ולהחזיר התקדמות בין מכשירים באמצעות התחברות אופציונלית.</p>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top: 28px;">
+        <h2>קישורים</h2>
+        <nav>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="support.html" class="secondary">Support</a>
+        </nav>
+      </section>
+    </main>
+
+    <footer>
+      <p>© Five Clues. כל הזכויות שמורות.</p>
+    </footer>
+  </div>
+</body>
+</html>
